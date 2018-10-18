@@ -8,7 +8,7 @@ namespace DemoApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static string[] Items = new[] {"a","b","c" };
+        public static string[] Items = new[] {"a","d","c" };
 
         public MainWindow()
         {
@@ -18,7 +18,7 @@ namespace DemoApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.TextBlock.Text = this.ComboBox.SelectedItem.ToString();
+            this.TextBlock.Text = this.ComboBox.SelectedItem?.ToString();
         }
     }
 }
