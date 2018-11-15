@@ -8,10 +8,11 @@ namespace DemoApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static string[] Items = new[] {"a","d","c" };
+        public static string[] Items = new[] {"a","d","c","e" };
 
         public MainWindow()
         {
+            int a;
             InitializeComponent();
             this.ComboBox.ItemsSource = Items;
         }
